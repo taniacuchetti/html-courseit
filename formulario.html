@@ -1,0 +1,78 @@
+<html>
+<head>
+    <style>
+    input[type=checkbox] {
+        transform: scale(2.5);
+      }
+      </style>
+      <style>
+    input[type=radio] {
+        transform: scale(2.5);
+      }
+    </style>
+<title>Formulario</title>
+
+</head>
+<body>
+<form action="">
+<label> <h1>Nombre</h1> 
+<br/>
+<input type="text" name="nombre" id="input-name" style="width: 250px; height: 40px">
+<br/>
+<br/>
+<label> <h1>Apellido</h1> 
+    <br/>
+    <input type="text" name="apellido" id="input-apellido" style="width: 250px; height: 40px">
+    <br/>
+    <br/>
+    <label> <h1>Edad</h1> 
+        <br/>
+        <input type="text" name="edad" id="input-edad" style="width: 250px; height: 40px">
+        <br/>
+</label>
+<br/>
+<br/>
+<label> <h1>Nacionalidad</h1> 
+    <br/>
+    <select name="persona-nacionalidad" style="width:200px; height:40px">
+        <option value="argentina">Argentina</option>
+        <option value="uruguaya">Uruguaya</option>
+        <option value="peruana">Peruana</option>
+        </select>
+    <br/>
+    <br/>
+     <h1>Tecnología</h1> 
+     <label>
+         <input type="checkbox" name="tipo_tecnologia" value="frontend"> 
+         <h1>Frontend</h1>
+     </label>
+     <br/>
+            <label>
+                <input type="checkbox" name=”tipo_tecnologia” value=”Fullstack”> 
+                <h1>Fullstack</h1>
+                </label>
+                <br/>
+                <label>
+                    <input type="checkbox" name=”tipo_tecnologia” value=”Backend”> 
+                    <h1>Backend</h1>
+                    </label>
+                    
+    <br/>
+     <h1>Sos mayor de edad?</h1> 
+        <label>
+            <input type="radio" name=”edad” value=”mayor”> 
+            <h1>Si</h1>
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name=”edad” value=”menor”> 
+                <h1>No</h1>
+                </label>
+            
+    <br/>
+    <input type="submit" value="Enviar">
+    
+    
+
+</form>
+</html>
