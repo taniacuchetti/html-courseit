@@ -1,79 +1,76 @@
 <html>
 <head>
-    <style>
-    input[type=checkbox] {
-        transform: scale(2.5);
-      }
-      </style>
-      <style>
-    input[type=radio] {
-        transform: scale(2.5);
-      }
-    </style>
 <title>Formulario</title>
-
 </head>
+
 <body>
-<form action="">
-<label> <h1>Nombre</h1> 
-<br/>
-<input type="text" name="nombre" id="input-name" style="width: 250px; height: 40px">
-<br/>
-<br/>
-<label> <h1>Apellido</h1> 
+    <form action="">
+    <label> Nombre
+    <br/>
+   <input type="text" name="nombre" id="input-name" style="width: 250px; height: 40px">
+   </label>
+    <br/>
+    <br/>
+    <label> Apellido
     <br/>
     <input type="text" name="apellido" id="input-apellido" style="width: 250px; height: 40px">
+    </label>
     <br/>
     <br/>
-    <label> <h1>Edad</h1> 
-        <br/>
-        <input type="text" name="edad" id="input-edad" style="width: 250px; height: 40px">
-        <br/>
-</label>
-<br/>
-<br/>
-<label> <h1>Nacionalidad</h1> 
+    <label> Edad
+    <br/>
+    <input type="number" name="edad" id="input-edad" style="width: 250px; height: 40px" min="18" max="99">
+    
+    </label>
+    <br/>
+    <br/>
+    <label> Nacionalidad 
     <br/>
     <select name="persona-nacionalidad" style="width:200px; height:40px">
         <option value="argentina">Argentina</option>
         <option value="uruguaya">Uruguaya</option>
         <option value="peruana">Peruana</option>
         </select>
+        </label>
     <br/>
     <br/>
-     <h1>Tecnología</h1> 
+     Tecnología 
+     <br/>
      <label>
          <input type="checkbox" name="tipo_tecnologia" value="frontend"> 
-         <h1>Frontend</h1>
+         Frontend
      </label>
      <br/>
         
             <label>
                 <input type="checkbox" name=”tipo_tecnologia” value=”Fullstack”> 
-                <h1>Fullstack</h1>
+                Fullstack
                 </label>
                 <br/>
                 <label>
                     <input type="checkbox" name=”tipo_tecnologia” value=”Backend”> 
-                    <h1>Backend</h1>
+                    Backend
                     </label>
+                    <br/>
                     
     <br/>
-     <h1>Sos mayor de edad?</h1> 
+     ¿Sos mayor de edad? 
+     <br/>
         <label>
             <input type="radio" name=”edad” value=”mayor”> 
-            <h1>Si</h1>
+            Si
             </label>
-            <br/>
+    <br/>
             <label>
                 <input type="radio" name=”edad” value=”menor”> 
-                <h1>No</h1>
-                </label>
-            
+                No
+            </label>
+    <br/>
     <br/>
     <input type="submit" value="Enviar">
     
     
 
 </form>
+</body>
 </html>
