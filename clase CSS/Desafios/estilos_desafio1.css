@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600&display=swap');
+
+  .post-article {
+    width: 700px;
+    margin: 2em auto;
+    padding:1.8em 2em;
+  }
+
+  .post-article .titulo-post {
+    font-family: 'Josefin Sans', sans-serif ; 
+    font-size: 3.1em;
+    line-height: 60px;
+    color:rgb(49, 49, 49);
+    margin-bottom:10px;  
+  }
+
+  .post-article .bajada-post {
+    font-family: 'Times New Roman', serif;
+    color:rgb(170, 170, 170); 
+  }
+
+  .post-article .texto-post {
+    font-family:'Times New Roman', serif;
+    font-size: 19px;
+    color:rgb(80, 80, 80);
+    line-height: 30px;
+  }
+
+  .post-article .button-article {
+    background-color:#c42944;
+    font-family:"Josefin Sans", sans-serif;
+    font-weight: lighter;
+    border: none;
+    color: white;
+    padding: 19px 60px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .post-article .button-article2 {
+    background-color: white;
+    font-family:"Josefin Sans", sans-serif;
+    border: 1.3px solid #c42944;
+    color: #c42944;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  }
