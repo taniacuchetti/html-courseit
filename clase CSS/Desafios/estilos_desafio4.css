@@ -1,0 +1,68 @@
+
+
+.main {
+    background-color:#f1f1f1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main .article-header {
+background-color: #333333;
+height: 50px;
+max-width: 500px;
+display:flex;
+justify-content:center;
+margin:0 auto;
+}
+
+.main .article-header .header-title {
+color:white;
+display:flex;
+align-items:center;
+}
+
+.main .article-content {
+display:flex;
+justify-content: center;
+}
+
+.main .article-content .texto-encima {
+position:absolute;
+top:100px;
+max-width:200px;
+text-align: center;
+color:white;
+}
+
+.main .article-content .article-paragraph {
+position:absolute;
+text-align:center;
+max-width:400px;
+top:200px;
+color:white;
+}
+
+.main .article-content .article-button {
+position:absolute;
+top:300px;
+background-color: #26a4d3;
+border-radius: 20px;
+color:white;
+padding: 10px;
+
+
+}
+
+.main .account-status {
+background-color:white;
+display:flex;
+justify-content:center;
+flex-wrap: wrap;
+max-width:500px;
+}
+
+,main .account-status {
+display:flex;
+justify-content: column;
+text-align: left;
+}

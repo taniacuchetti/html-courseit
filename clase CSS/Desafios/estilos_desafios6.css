@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.main {
+background-color: #f4f4f4;
+font-family: 'Lato', sans-serif;  
+}
+
+.background-header {
+background-color: #ec6d64;
+height:12em;
+}
+
+.articles-wrapper {
+margin:0 auto;
+max-width:500px;
+margin-top: -90px;
+}
+
+.article-header {
+background-color: white;
+text-align:center;
+padding:30px 5px 30px 5px;
+font-size:15px;
+}
+
+.article-header .article-title{
+font-size:40px;
+letter-spacing: 5px;
+padding:10px;
+margin-top: -5px;
+}
+
+.article-header .article-text {
+text-align: left; 
+padding:20px;   
+color:#666666;
+line-height: 20px;
+margin-bottom: 20px;
+}
+
+.article-header .button {
+background-color: #ec6d64;
+border:none;
+color:white;
+line-height: 35px;
+padding:7px 20px 7px 20px;
+margin-bottom: 20px;
+font-size: 17px;
+}
+
+.save-money {
+background-color: #111111;
+color:white;
+padding:30px 25px 30px 25px;
+}
+
+.save-money .money-title{
+font-size:20px;
+padding-bottom:15px
+}
+
+.save-money .money-paragraph {
+padding-bottom:15px;
+color:#666666;
+font-size:15px;
+line-height: 20px;
+}
+
+.save-money .money-paragraph .bold{
+color:white;
+font-weight: 700;
+}
+
+.save-money .money-link {
+display:inline-block;
+color:#ec6d64;
+margin-bottom: 11px;
+}
+
+.main .article-help {
+display:flex;
+flex-direction:column;
+justify-content: center;
+margin:25px 0px 25px 0px;
+text-align: center;
+background-color: #ffe0de;
+height:6em;
+line-height: 20px;
+}
+
+.main .article-help .help-link{
+color:#ec6d64;
+}
+
+.main .bottom .info {
+padding: 0px 30px 40px 30px;
+font-size:11px;
+color:#66666e;
+font-weight: bold;
+}
+
+.main .bottom .info .article-link {
+color:black;
+font-weight:bold;
+}

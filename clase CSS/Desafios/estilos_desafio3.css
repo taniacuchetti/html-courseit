@@ -41,10 +41,6 @@ transition: background-color 0.3s ease-in-out;
 color:white;
 }
 
-.articles-wrapper .article:hover {
-background-color: red;
-}
-
 .articles-wrapper .article:nth-child(1) {
   background-color: #1484c6;
 }
@@ -69,6 +65,11 @@ background-color: red;
   background-color:#a3c5bf;
 }
 
+.articles-wrapper .article:hover {
+  background-color: white;
+  
+  }
+
 .article .article-date {
   margin-bottom:10px;
   font-size:0.8em;
@@ -89,4 +90,5 @@ font-size: 10px;
 
 .article .read-link {
   margin-top:auto;
+  text-decoration: none;
 }
