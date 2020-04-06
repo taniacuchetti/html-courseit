@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap');
+
+.wrapper {
+background-color:#f1f1f1;
+min-height: 100%;
+font-family: 'Work Sans', sans-serif;
+}
+
+.wrapper .article-wrapper{
+background-color: white;
+max-width:600px;
+margin: 0 auto;
+text-align:center;
+padding-bottom: 40px;
+}
+
+.wrapper .article-wrapper .article-header {
+padding:25px;
+}
+
+.wrapper .article-wrapper .article-header .article-title {
+font-size:1.2em;
+font-weight: 600;
+}
+
+.wrapper .article-wrapper .article-header .article-subtitle {
+font-size:1.8em;
+padding:55px;
+line-height: 35px;
+}
+
+.wrapper .article-wrapper .article-header .article-subtitle .blue {
+color:#1c7ee9;
+font-weight: 600;
+}
+
+.wrapper .projects .projects-title {
+font-size:1.6em;
+font-weight: 600;
+margin-top:-25px;
+}
+
+.wrapper .projects .projects-text {
+font-size:18px;
+color:#a3a3a3;
+line-height: 25px;
+padding:25px 55px 25px 55px;
+}
+
+.wrapper .projects .projects-catalog {
+display:flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+width: 90%;
+margin: auto;
+}
+
+.wrapper .projects .projects-catalog .img-individual .img-title {
+font-weight: 600;
+}
+
+.wrapper .projects .projects-catalog .img-individual {
+display:flex;
+flex-direction:column;
+justify-content: center;
+width:50%;
+}
+
+.wrapper .projects .projects-catalog .img  {
+width: 260px;
+height: 250px;
+margin: 10px;
+object-fit:cover;
+padding-bottom:6px;
+}
+
+.wrapper .projects .projects-catalog .img-title {
+font-size:1.1em;
+padding-bottom:10px
+}
+
+.wrapper .projects .projects-catalog .img-text {
+color:gray;
+font-size:0.9em;
+padding-bottom:15px
+}
+
+.wrapper .projects .projects-catalog .img-individual .img5 {
+
+}
+
+

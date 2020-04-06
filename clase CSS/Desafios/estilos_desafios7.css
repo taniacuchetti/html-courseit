@@ -1,22 +1,217 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
-.body {
-    background-color: rgb(238, 238, 238);
-    margin: 0px;
-    overflow-x: hidden;
-}
 
 .main {
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
+background-color:#f1f1f1;
+min-height:100%;
+max-width: 100%;
+
 }
 
 .wrapper {
-    background-color: royalblue;
+background-color:#26a4d3;
+display:flex;
+flex-direction: column;
+margin: 0 auto;
+max-width: 600px;
+font-family:"roboto";
+}
+ 
+.vision {
+display:flex;
+justify-content:center;
+background-color: #333333;
+color:white;
+text-transform:uppercase;
+font-weight: bold;
+padding:20px;
+}
+
+.welcome {
+text-align:center;
+color:white;
+padding:80px 50px;
+background-image: url(https://images.unsplash.com/photo-1429667947446-3c93a979b7e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+background-color: rgba(41, 41, 41, 0.897);
+background-blend-mode: multiply;
+background-size: cover;
+box-sizing: border-box;
+background-position: center;
+}
+
+.welcome-title {
+text-transform: uppercase;
+font-size:1.5em;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.welcome .welcome-text {
+color: white;
+font-weight:bold;
+font-size:0.8em;
+line-height: 18px;
+margin-bottom:18px;
+color:#757575;
+}
+
+.welcome .button {
+padding:12px 20px 12px 21px;
+background-color: #26a4d3;
+text-transform:uppercase;
+font-weight:bold;
+border-radius: 30px;
+color:white;
+cursor:pointer;
+transition-duration: 0.4s;
+border:none;
+}
+
+.welcome .button:hover {
+background-color:#43c9fa;
+}
+
+.account {
+background-color:white;
+padding:25px;
+box-sizing: border-box;
+}
+
+.account-title {
+text-transform: uppercase;
+font-weight:bold;
+margin-bottom: 12px;
+margin-top:10px;
+font-size:0.8em;
+color:#333333;
+}
+
+.account-text1 {
+    font-size:0.8em;
+    font-weight:bold;
+    margin-bottom: 12px;
+    line-height: 15px;
+    color:#333333;
+}
+
+.account-text2 {
+    font-size:0.8em;
+    line-height: 15px;
+    margin-bottom: 12px;
+    color:#333333;
+    }
+
+.greetings {
+font-size:0.8em;
+margin-bottom: 12px;
+}
+
+.profile-info {
+display:flex;
+}
+
+.profile-picture {
+height:55px;
+width:55px;
+border-radius:30px;
+}
+
+.profile-text {
+display:flex;
+flex-direction: column;
+justify-content: center;
+font-size: 0.8em;
+line-height: 15px;
+margin-left:20px;
+color:#333333;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.feedback {
+background-color:#2cb4e7;
+padding:30px;
+box-sizing:border-box;
+color:white;
+text-align:center;
+line-height: 15px;
+}
+
+.feedback-title {
+text-transform: uppercase;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.feedback-text {
+font-size:0.8em;
+margin-bottom: 20px;
+color:#aad4e9;
+font-weight:bold;
+}
+
+.button-feedback {
+padding:12px 20px 12px 21px;
+background-color: white;
+text-transform:uppercase;
+font-weight:bold;
+border-radius: 30px;
+color:#2cb4e7;
+cursor:pointer;
+transition-duration: 0.4s;
+border:none;
+}
+
+.button-feedback:hover {
+background-color:#d7f4ff;
+}
+
+.company {
+background-color: white;
+text-align:center;
+font-size:0.8em;
+padding:20px;
+line-height: 25px;
+color:#666666;
+font-weight: bold;
+}
+
+.wrapper .social-medias {
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+background-color: black;
+padding:25px;
+box-sizing:border-box;
+max-width: 100%;
+}
+
+.icon {
+background-color: white;
+display:inline-block;
+color:black;
+margin-left:5px;
+margin-right: 5px;
+padding: 8px;
+border-radius: 60px;
+}
+
+.company .company-info .link {
+color:black;
+}
+
+.icon-fb {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 600px;
-    width: 100%;
-    font-family: 'roboto';
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    padding: 6px;
+    cursor: pointer;
+  }
+
+  
