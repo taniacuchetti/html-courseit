@@ -77,6 +77,8 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
+/* Tucu: display:flex flex-direction:row flex-wrap:wrap  */
+
 .form-signup .form .input-text .input-option {
 font-size:0.85em;
 padding:20px;
@@ -93,6 +95,8 @@ display:flex;
 flex-direction:column;
 margin: 5px 25px;
 }
+
+/* Tucu: flex-direction:column  */
 
 .form-signup .form .question-create .question {
 margin-top:2px;

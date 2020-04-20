@@ -1,0 +1,16 @@
+
+@import "modules/_blog-post";
+@import "base/_reset";
+@import "modules/_header";
+
+body {
+background-color:#333;
+}
+
+.wrapper {
+    .content {
+        .title {
+            font-size:1.3em;
+        }
+    }
+}
