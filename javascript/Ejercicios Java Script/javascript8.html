@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h1>Desafío Tarjetas</h1>
+
+<script>
+
+/* Dados distintas tarjetas de crédito, mostrar por consola hasta cuantas cuotas
+sin interés es posible ofrecer:
+
+Visa – hasta 9 cuotas s/interés
+Mastercard – hasta 6 cuotas s/interés
+Amex – hasta 3 cuotas sin interés
+Todas las demás - 1 cuota sin interés
+
+La idea es que ustedes tienen una variable con una tarjeta y el codigo 
+responde cuantas cuotas sin interes tienen en base a la tarjeta de la variable.
+Son acumulativas, una tarjeta que tiene hasta 9 cuotas sin interes, pero también 
+tiene 6 cuotas sin interés
+*/
+
+/* Vamos a usar objetos:
+
+Inicio del Programa 
+
+1. Crear una definición de cantidad de cuotas de tarjetas (va a ser un objeto)
+Habría que hacer que las tarjetas sean parametrizables, es decir, que si en un
+futuro agregan una cuota, sea más facil de resolver que si lo hacemos con ifs
+
+2. Recibir una tarjeta en particular 
+3. Comprobar:
+   3.1 Si la tarjeta es visa:
+      Imprimir en consola los textos:
+        "9 cuotas sin interés"
+        "6 cuotas sin interés"
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"     
+
+    3.2 Si la tarjeta es Mastercard:
+      Imprimir en consola los textos:
+        "6 cuotas sin interés"
+        "3 cuotas sin interés"
+        "1 cuotas sin interés" 
+
+    3.3 Si la tarjeta es Amex:
+      Imprimir en consola los textos:
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"  
+
+    3.4 Si la tarjeta es cualquiera:
+      Imprimir en consola el texto:
+        "1 cuotas sin interés"      
+
+Fin del programa         
+             
+*/
+
+// VAMOS A RESOLVERLO PRIMERO CON IF SIN OBJETO - - - - No esta tan bueno porque sería 
+// HARDCODE: Ir con valores sólidos pero sin 
+// abstraerlos de los datos con los que vamos a trabajar
+// 2. Recibir una tarjeta en particular 
+let card = "Mastercard";
+
+// fix:comprobar si el usuario ingresó una tarjeta
+
+if (card != undefined || card != null) {
+
+/* 3. Comprobar: */
+/*  3.1 Si la tarjeta es visa: */
+  if (card == "Visa"){
+     /*  Imprimir en consola los textos:
+        "9 cuotas sin interés"
+        "6 cuotas sin interés"
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"   */  
+    console.log("9 Cuotas sin interés");  
+    console.log("6 Cuotas sin interés");
+    console.log("3 Cuotas sin interés");
+    console.log("1 Cuotas sin interés");  
+
+/*  3.2 Si la tarjeta es Mastercard: */
+   } else if (card =="Mastercard") {
+     /*  Imprimir en consola los textos:
+        "6 cuotas sin interés"
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"  */
+    console.log("6 Cuotas sin interés");  
+    console.log("3 Cuotas sin interés");
+    console.log("1 Cuotas sin interés");  
+
+/*  3.3 Si la tarjeta es Amex: */      
+   } else if (card = "Amex") {
+     /*  Imprimir en consola los textos:
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"   */
+    console.log("3 Cuotas sin interés");
+    console.log("1 Cuotas sin interés"); 
+
+ /*  3.4 Si la tarjeta es cualquiera: */
+   } else {
+     /*  Imprimir en consola el texto:
+        "1 cuotas sin interés"   */  
+        console.log("1 Cuotas sin interés");      
+     }
+} else {
+  alert("no ingresaste una tarjeta, por favor, ingresar una");  
+}
+
+
+
+
+//  ----------------------------------------------------------------------
+
+// Vamos a resolverlo mejor con un objeto for para parametrizar las tarjetas y las cuotas
+
+/* 1. Crear una definición de cantidad de cuotas de tarjetas (va a ser un objeto)
+Habría que hacer que las tarjetas sean parametrizables, es decir, que si en un
+futuro agregan una cuota, sea más facil de resolver que si lo hacemos con ifs */
+
+//Vamos a hacer un arrey con distintos objetos adentro como si fuera undiccionario por 
+//donde va a recorrer el for:
+
+const tarjetas = [ {
+cardName: "Visa",
+installments: [1,3,6,9,12,5,18]
+},
+{
+cardName: "Mastercard",
+installments: [1,3,6]
+},
+{
+cardName: "Amex",
+installments: [1,3]
+}];
+
+//2. Recibir una tarjeta en particular 
+let card = "visa";
+console.log("La tarjeta a buscar es " + card)
+
+let selectedCard; //declaro la variable afuera para después poder definirla en el bucle for
+
+for (let i=0; 1 < tarjeta.length; i++) {        //este for itera el array de las tarjetas
+
+  const currentCard = tarjetas[i];      //El bucle for declara varias const de nombre currentCard para usar dentro de este bucle para luego compararla con la var card ingresada 
+                                        //Osea que por cada iteración, vamos a generar una variable (primero la de Visa, después la de Master..etc) Para luego comparar en un if:
+
+  if (currentCard.cardName == card){  //Si el nombre de esa cont (no las cuotas) coincide con el valor ingresado, da true y se declara selectedCard. Si esto nunca da true, jamás se se va  declarar selectedCard
+    selectedCard = currentCard;
+  }
+}
+
+//Hasta acá se guardó la variable selectedCards y ahora la imprimo en la consola. Es una buena práctica poner 
+// console.logs por todos lados para ver el valor que van tomando las cosas en las distintas partes del código.
+
+if (selectedCard != undefined){      //A esa selectedCard le digo que si no esta "undefined", que me muestre las cuotas:
+  console.log("La tarjeta seleccionada es: " , selectedCards) //No se puede concatenar objetos con +, por eso se usa la coma
+ console.log("Las cuotas de esta atrjeta son: ". selectedCard.intallments);
+
+ for (let i = 0; i < selectedCard.installments.length; i++) {  //Tengo que hacer este for que recorre las cuotas y las muestra
+   const installment = selectedCard.installments[i];
+
+  console.log(installments + " cuotas sin interés.");
+ }
+
+} else {
+  console.log("La tarjeta " + card + " no forma parte del diccionario");
+  console.log("1 cuota sin interés")
+}
+
+
+/* 3. Comprobar:
+   3.1 Si la tarjeta es visa: */
+/*       Imprimir en consola los textos:
+        "9 cuotas sin interés"
+        "6 cuotas sin interés"
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"   */   
+
+  /*   3.2 Si la tarjeta es Mastercard: */
+     /*  Imprimir en consola los textos:
+        "6 cuotas sin interés"
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"  */
+
+   /*  3.3 Si la tarjeta es Amex: */
+     /*  Imprimir en consola los textos:
+        "3 cuotas sin interés"
+        "1 cuotas sin interés"   */
+
+    /* 3.4 Si la tarjeta es cualquiera: */
+     /*  Imprimir en consola el texto:
+        "1 cuotas sin interés"    */   
+
+/* Fin del programa      */    
+             
+
+
+
+
+</script>   
+    
+</body>
+</html>

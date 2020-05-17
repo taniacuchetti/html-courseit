@@ -10,22 +10,62 @@
 
 <script>
 
-var color = "Rojo salmón";
-var edad = 22;
-var tengoGato = false;
-var elDobleDeMiEdad = (edad * 2);
-var aclaracionDeSiTengoGatoONO = "Tengo un Gato: " + tengoGato;
 
-if (edad == 22) {
- console.log("Vos si conoces netscape");
-} else {
- console.log("Bueno, te creo");   
+const notas = [8,3,10,9, 2, 5];
+
+for (let i = 0; i < notas.length; i++){
+    console.log(muebles[i]);
 }
 
-console.log("¿Tengo un Gato?: " + tengoGato); //Concatenar el string "Tengo un gato?:" con el valor de la varialable tengoGato
-console.log("¿Cuál es mi edad?: " + edad);
-console.log("Color favorito: " + color);
-console.log("Edad por dos: " + elDobleDeMiEdad);
+
+let sumatoria = 0;
+
+for (let i = 0; i < notas.length; i++){
+    sumatoria = sumatoria + notas[i]
+}
+
+
+
+
+const persona = {
+edad: 33  
+}
+
+
+
+if (persona.edad > 18) {
+console.log("Es Mayor de edad");
+} else {
+ console.log("No es Mayor de edad");   
+}
+
+
+
+
+
+
+
+// var color = "Rojo salmón";
+// var edad = 22;
+// var tengoGato = false;
+// var elDobleDeMiEdad = (edad * 2);
+// var aclaracionDeSiTengoGatoONO = "Tengo un Gato: " + tengoGato;
+
+// const precio = [200, 300, 400, 500];
+// const data = ["Andres", 20, 'Developer', false];
+
+
+
+// if (edad == 22) {
+//  console.log("Vos si conoces netscape");
+// } else {
+//  console.log("Bueno, te creo");   
+// }
+
+// console.log("¿Tengo un Gato?: " + tengoGato); //Concatenar el string "Tengo un gato?:" con el valor de la varialable tengoGato
+// console.log("¿Cuál es mi edad?: " + edad);
+// console.log("Color favorito: " + color);
+//console.log("Edad por dos: " + elDobleDeMiEdad);
 
 
 </script>    

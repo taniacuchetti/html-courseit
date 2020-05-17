@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* Dada una variable "x" la cual contiene un numero, determinar si ese numero es 
+        positivo o negativo 
+        
+        Inicio del programa:
+        
+        1. Recibir el número a evaluar   
+        2. Comprobar si el número es positivo, negativo o cero
+        3. Si el número es positivo:
+           3.1 Imprimir en pantalla el texto "Es positivo"
+        4. Si el texto es negativo:
+           4.1 Imprimir en pantalla el texto "Es negativo"
+        5. Si el número es 0
+           5.1 Imprimir en pantalla el texto "Es cero"   
+        
+        Fin del programa
+        
+        */
+
+
+        // 1. Recibir el número a evaluar  
+        const num = 4;
+        // 2. Comprobar si el número es positivo, negativo o cero
+        // 3. Si el número es positivo:
+        if (num > 0) {
+            // 3.1 Imprimir en pantalla el texto "Es positivo"
+            console.log("El texto es positivo");
+        }
+        // 4. Si el texto es negativo:
+        else if (num < 0) {
+            // 4.1 Imprimir en pantalla el texto "Es negativo"
+            console.log("El número es negativo");
+        }
+        // 5. Si el número es 0
+        else {
+            //   5.1 Imprimir en pantalla el texto "Es cero"  
+            console.log("El número es cero");
+        }
+
+
+        const num = 4;
+
+        if (num > 0) {
+            console.log("El texto es positivo");
+        } else if (num < 0) {
+            console.log("El número es negativo");
+        } else {
+            console.log("El número es cero");
+        }
+
+        /*In JavaScript, there are two ways to check if a variable is a number : 
+        isNaN() – Stands for “is Not a Number”, if variable is not a number, it return true, else return false. 
+        typeof – If variable is a number, it will returns a string named “number”. Note*/
+
+        // 1. Recibir el número a evaluar  
+        const num = 4;
+
+        // Fix: Comprobar si el valor es un número o no
+        if (typeof num == "number") {
+            //acá podemos estar seguros de que num es un número
+
+            // 2. Comprobar si el número es positivo, negativo o cero
+
+            // 3. Si el número es positivo:
+            if (num > 0) {
+                // 3.1 Imprimir en pantalla el texto "Es positivo"
+                console.log(num + " es un número y es positivo");
+            }
+            // 4. Si el texto es negativo:
+            else if (num < 0) {
+                // 4.1 Imprimir en pantalla el texto "Es negativo"
+                console.log(num + " es un número y es negativo");
+            }
+            // 5. Si el número es 0
+            else {
+                //   5.1 Imprimir en pantalla el texto "Es cero"  
+                console.log("El número cero es neutro");
+            }
+
+        } else {
+            //acá, num NO es un número
+            console.log(num + " no es un número, por favor, ingrese un número")
+        }
+
+
+
+        //El código sin comentarios, se vería así:
+
+        const num = 4; 
+
+
+        if (typeof num == "number") {
+
+            if (num > 0) {
+                console.log(num + " es un número y es positivo");
+            } else if (num < 0) {
+                console.log(num + " es un número y es negativo");
+            } else { //Este else afecta al if si el número ingresado no es ni positivo ni negativo
+                console.log("El número cero es neutro");
+            }
+        } else { //Este else afecta al if general, por si lo ingresado no es un número
+            console.log(num + " no es un número, por favor, ingrese un número")
+        }
+
+
+
+
+        /* Este es el código que escribí yo
+
+        let num = prompt("ingresa un número")
+
+        if (num > 0) {
+            console.log("Es un número positivo")
+        } else if (num = 0) {
+            console.log("Es un número neutro")
+        } else {
+            console.log("Es un número negativo")
+        }
+        */
+
+
+    </script>
+
+
+</body>
+
+</html>

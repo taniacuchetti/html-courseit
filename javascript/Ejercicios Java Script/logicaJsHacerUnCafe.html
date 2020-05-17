@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+let preferencia = undefined;
+
+if (preferencia != undefined || preferencia != null) {
+
+  if (preferencia == "Frio") {
+    replatearseLaVida();
+  } else if (preferencia == "Caliente") {
+    calentarAgua();
+    
+    if (tipoDeCafe != undefined || tipoDeCafe != null) {
+      if (tipoDeCafe == "saquito") {
+        ponerSaquito();
+        verterAgua();
+        esperar();
+      } else if (tipoDeCafe == "batido") {
+        verterCafeInstantaneo();
+        verterPoquitaAgua();
+        batir();
+        verterRestoDelAgua();
+        terminarDeBatir();
+      }
+    } else {
+      alert("Escuchame una cosa, cómo lo querí");
+    }
+  
+    ponerleMuchaAzucar();
+  }
+
+} else {
+  alert("Poneme la preferencia, salame");
+}
+
+</script>
+</body>
+</html>
